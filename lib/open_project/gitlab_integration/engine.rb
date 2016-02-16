@@ -12,5 +12,17 @@ module OpenProject::GitlabIntegration
              :author_url => 'http://finn.de',
              :requires_openproject => '>= 3.0.0pre13'
 
+    initializer 'github.register_hook' do
+      ::OpenProject::Webhooks.register_hook 'gitlab' do |hook, environment, params, user|
+        HookHandler.new.process(hook, environment, params, user)
+      end
+    end
+
+    initializer 'gitlab.subscribe_to_notifications' do
+      ::OpenProject::Notifications.subscribe('gitlab.push',
+                                             &NotificationHandlers.method(:push))
+      ::OpenProject::Notifications.subscribe('gitlab.note',
+                                             &NotificationHandlers.method(:note))
+    end
   end
 end

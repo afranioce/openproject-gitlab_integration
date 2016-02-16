@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name        = "openproject-gitlab_integration"
   s.version     = OpenProject::GitlabIntegration::VERSION
   s.authors     = "Finn GmbH"
-  s.email       = "info@finn.de"
+  s.email       = "afranioce@gmail.com"
   s.homepage    = "https://community.openproject.org/projects/gitlab-integration"  # TODO check this URL
   s.summary     = 'OpenProject Gitlab Integration'
   s.description = FIXME
@@ -15,5 +15,7 @@ Gem::Specification.new do |s|
 
   s.files = Dir["{app,config,db,lib}/**/*"] + %w(CHANGELOG.md README.md)
 
-  s.add_dependency "rails", "~> 3.2.14"
+  s.add_dependency 'rails', '~> 4.2.4'
+
+  s.add_dependency "openproject-webhooks", "~> 5.1.0"
 end

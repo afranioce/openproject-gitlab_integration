@@ -1,0 +1,22 @@
+pt_BR:
+  gitlab_integration:
+    pull_request_opened_comment: >
+      **PR Aberta:** "Pull request %{pr_number} “%{pr_title}”":%{pr_url} para "%{repository}":%{repository_url}
+      foi aberto por "%{github_user}":%{github_user_url}.
+    pull_request_closed_comment: >
+      **PR Fechada:** "Pull request %{pr_number} “%{pr_title}”":%{pr_url} para "%{repository}":%{repository_url}
+      foi fechado por "%{github_user}":%{github_user_url}.
+    pull_request_merged_comment: >
+      **PR Mesclada:** "Pull request %{pr_number} “%{pr_title}”":%{pr_url} para "%{repository}":%{repository_url}
+      foi mesclado por "%{github_user}":%{github_user_url}.
+    pull_request_referenced_comment: >
+      **Referenced in PR:** "%{github_user}":%{github_user_url} referenciada neste pacote de trabalho em
+      "Pull request %{pr_number} “%{pr_title}”":%{pr_url} em "%{repository}":%{repository_url}.
+
+    push_comment:
+      *%{gitlab_user}* pushed to branch "%{branch_name}":%{branch_url} of %{repository}":%{repository_url}
+      ("Compare changes":%{push_url})
+
+    push_comment_commit:
+      > *"%{commit_hash}":%{commit_url}*: Adicionando a classe para a logo de DeVry
+      > - *%{author_commit}*

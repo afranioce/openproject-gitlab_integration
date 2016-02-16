@@ -1,0 +1,23 @@
+en:
+  gitlab_integration:
+    pull_request_opened_comment: >
+      **PR Opened:** "Pull request %{pr_number} “%{pr_title}”":%{pr_url} for "%{repository}":%{repository_url}
+      has been opened by "%{github_user}":%{github_user_url}.
+    pull_request_closed_comment: >
+      **PR Closed:** "Pull request %{pr_number} “%{pr_title}”":%{pr_url} for "%{repository}":%{repository_url}
+      has been closed by "%{github_user}":%{github_user_url}.
+    pull_request_merged_comment: >
+      **PR Merged:** "Pull request %{pr_number} “%{pr_title}”":%{pr_url} for "%{repository}":%{repository_url}
+      has been merged by "%{github_user}":%{github_user_url}.
+    pull_request_referenced_comment: >
+      **Referenced in PR:** "%{github_user}":%{github_user_url} referenced this work package in
+      "Pull request %{pr_number} “%{pr_title}”":%{pr_url} on "%{repository}":%{repository_url}.
+
+    push_comment: >
+      *%{gitlab_user}* pushed to branch "%{branch_name}":%{branch_url} of %{repository}":%{repository_url}
+      ("Compare changes":%{push_url})
+      %{push_commits}
+
+    push_comment_commit: >
+      > "%{commit_hash}":%{commit_url}: %{commit_message}
+      > - *%{author_commit}*
