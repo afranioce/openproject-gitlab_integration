@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.email       = "afranioce@gmail.com"
   s.homepage    = "https://community.openproject.org/projects/gitlab-integration"  # TODO check this URL
   s.summary     = 'OpenProject Gitlab Integration'
-  s.description = FIXME
-  s.license     = FIXME # e.g. "MIT" or "GPLv3"
+  s.description = 'Integrates OpenProject and Gilab for a better workflow'
+  s.license     = 'GPLv3'
 
   s.files = Dir["{app,config,db,lib}/**/*"] + %w(CHANGELOG.md README.md)
 
