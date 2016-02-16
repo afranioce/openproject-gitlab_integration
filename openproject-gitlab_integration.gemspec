@@ -6,7 +6,7 @@ require 'open_project/gitlab_integration/version'
 Gem::Specification.new do |s|
   s.name        = "openproject-gitlab_integration"
   s.version     = OpenProject::GitlabIntegration::VERSION
-  s.authors     = "Finn GmbH"
+  s.authors     = "Afranio Martins"
   s.email       = "afranioce@gmail.com"
   s.homepage    = "https://community.openproject.org/projects/gitlab-integration"  # TODO check this URL
   s.summary     = 'OpenProject Gitlab Integration'
@@ -17,5 +17,5 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'rails', '~> 4.2.4'
 
-  s.add_dependency "openproject-webhooks", "~> 5.1.0"
+  s.add_dependency "openproject-webhooks", "~> 5.0.1"
 end
